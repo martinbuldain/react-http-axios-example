@@ -7,7 +7,7 @@ class NewPost extends Component {
     state = {
         title: '',
         content: '',
-        author: 'Max'
+        author: 'Martin'
     }
 
     postDataHandler = () => {
@@ -17,7 +17,7 @@ class NewPost extends Component {
             author: this.state.author
         };
         //axios automaticamente le hace un stringify al objeto data, convirtiendolo a JSON
-        axios.post('https://jsonplaceholder.typicode.com/posts', data)
+        axios.post('/posts', data)
         .then(response => {
             console.log(response);
         });
