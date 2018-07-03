@@ -8,7 +8,7 @@ import axios from 'axios';
 //Cuando quiero tener una URL base
 //Si dejo comentada la linea de la URL, el unico request que va a funcionar es el de Blog.js porque solo la configure en axios.js
 //y la uso en Blog.js
-//axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
 axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
 axios.defaults.headers.post['Content-type'] = 'application/json';
 
